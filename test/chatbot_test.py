@@ -19,7 +19,7 @@ db = Database(
 db.connect()# 디비 연결
 
 #원문
-query = '모든 게 끝난 느낌이야. 투자했던 주식이 폭락했어.'
+query = '모든 게 끝난 느낌이야. 내 돈이 폭락했어.'
 
 #의도 파악
 from model.intent.IntentModel import IntentModel

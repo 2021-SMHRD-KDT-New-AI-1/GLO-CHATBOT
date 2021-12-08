@@ -26,7 +26,7 @@ while True:
     message = json.dumps(json_data)
     mySocket.send(message.encode())
 
-    #챗봇 엔진 답변 출력0
+    #챗봇 엔진 답변 출력
     data = mySocket.recv(2048).decode()
     ret_data = json.loads(data) #json 형태 문자열을 json 객체로 변환
     print('답변 : ')
