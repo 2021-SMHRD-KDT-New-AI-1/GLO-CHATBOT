@@ -13,7 +13,7 @@ model = load_model('intent_model_emo.h5')
 intent = IntentModel(model_name='intent_model_emo.h5',proprocess=p)
 
 
-query = input('>> 의도 입력')
+query = input('>> 의도 입력 \n')
 pos = p.pos(query)
 keywords = p.get_keywords(pos, without_tag=True)
 seq = p.get_wordidx_sequence(keywords)
